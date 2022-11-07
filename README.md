@@ -2,7 +2,7 @@ I am planning to document the process of running an old (licensed) version of LO
 See it in action: https://www.dropbox.com/s/nvuqo4zncsqhizt/YouCut_20221107_222834913.mp4?dl=0
 <br><br>
 <h2>DISCLAIMER</h2>
-Still a work in progress!<br><br>
+This guide is still a work in progress!<br><br>
 Everything is published 'as-is', no responsability taken. Some steps may be different depending on your setup, please take this as a general, inspiring, not detailed guide. I am not a programmer, just an enthusiast linux user with some (few) skills, please understand.
 
 <h2>BACKGROUND</h2>

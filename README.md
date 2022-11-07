@@ -25,7 +25,7 @@ Lotus 123 v.2.4 comes in 9 parts, 5.25-inch disk setup. I first tried to extract
 
 <h2>FIRST STEPS</h2>
   <li>Install Virtualbox on your machine (use your favorite package manager) and run a FreeDOS 1.3 LiveCD from it. https://freedos.org/download.<br>
-  <li>Install BOCHS on your reMarkable. You must have toltec repositories (instructions on how to install the repository on your remarkable at https://toltec-dev.org). Ssh to your reMarkable and type: <b>opkg install bochs</b> to get it.<br>
+  <li>Install BOCHS on your reMarkable. You must have toltec repositories (instructions on how to install the repository on your remarkable at https://toltec-dev.org). Ssh into your reMarkable and type: <b>opkg install bochs</b> to get it.<br>
   <li>Download the pre-made FreeDOS image for BOCHS, it works out the box (https://sourceforge.net/projects/bochs/files/Disk%20Images/FreeDos/) we will upgrade it later.<br> <li>Scp it to your reMarkable: <b>scp fdos-10meg.tar.gz root@your-remarkable-ip:/home/root</b><br>
   <li>ssh to your reMarkable and extract your FreeDOS (<b>tar xfvz fdos-10meg.tar.gz</b>), files should be extracted into freedos-img folder, get into the folder try if it works: <b>bochs -q -unlock -f bochsrc</b><br>
   <li>Google for your Lotus123 v2.4 images, extract files on your linux box. Don't violate copyright doing this, make sure you have a license.
@@ -37,7 +37,7 @@ Lotus 123 v.2.4 comes in 9 parts, 5.25-inch disk setup. I first tried to extract
 Now you have a working FreeDOS machine in Virtualbox, with a Lotus copy installed upon, try if it works locally and stop your virtual machine.
 
 <h2>CONVERTING VIRTUALBOX VDI DRIVE, AND WHY</h2>
-Ok, we have choosiness in the installation process by Lotus, but also I faild several times trying to get my Lotus into BOCHS. bximage which creates BOCHS images was not a thing for me, I am too lazy to be able to write into those read only images. Other means went into failure (I will not get into this...). So I just converted my Virtualbox VDI disk containg all software and system, into an IMG file to be used into BOCHS. Then I updated my FreeDOS installation on BOCHS, because the full image can't be read by the emulator - almost in my case - don't ask me why...<br><br>
+Ok, we have choosiness in the installation process by Lotus, but also I failed several times trying to get my Lotus into BOCHS. bximage which creates BOCHS images was not a thing for me, I am too lazy to be able to write into those read only images. Other means went into failure (I will not get into this...). So I just converted my Virtualbox VDI disk containg all software and system, into an IMG file to be used into BOCHS. Then I updated my FreeDOS installation on BOCHS, because the full image can't be read by the emulator - almost in my case - don't ask me why...<br><br>
 
   <li>Use Virtualbox tools to convert your Virtualbox VDI disk image: <b>vboxmanage clonehd --format RAW source.vdi destination.img</b><br> where "source" is the name of your virtual hard drive on Virtualbox.
   <li>Rename your destination.img, let's assume file.img, and scp it to remarkable: <b>scp file.img root@your-remarkable-ip:/home/root</b><br>

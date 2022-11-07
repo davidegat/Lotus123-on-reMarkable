@@ -8,9 +8,9 @@ vgaromimage: file=$BXSHARE/VGABIOS-lgpl-latest
 vga: extension=vbe, update_freq=15
 
 floppya: 1_44=a.img, status=inserted # Choose your floppy images, if needed
-floppyb: 1_44=b.img, status=inserted # ..or comment out
+floppyb: 1_44=b.img, status=inserted # ..or wipe those lines
 
-# Suggested: expand this c.img image with bximage to get space for new system files and Lotus
+# Suggested: expand this c.img image with bximage to get enough space for new system files and Lotus
 # bximage will prompt you what needed, easy.
 
 ata0-master: type=disk, path=c.img, cylinders=306, heads=4, spt=17

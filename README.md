@@ -43,7 +43,7 @@ Ok, we have choosiness in the installation process by Lotus, but also I failed s
   <li>Rename your destination.img, let's assume file.img, and scp it to remarkable: <b>scp file.img root@your-remarkable-ip:/home/root</b><br>
   <li>On reMarkable, move file.img in your freedos-img folder: <b>mv file.img freedos-img</b><br>
   <li>Modify yourc bochsrc configuration file to include a new drive: <b>ata0-slave:  type=disk, path=file.img, type=flat</b><br>
-  <li>Run BOCHS on reMarkable via ssh and cross your fingers. If you can access your new drive with the DOS command d<b>d:</b>, you are almost done, else let me know if you had enough coffee and time to debug the issue :)<br>
+  <li>Run BOCHS on reMarkable via ssh and cross your fingers. If you can access your new drive with the DOS command <b>d:</b>, you are almost done, else let me know if you had enough coffee and time to debug the issue :)<br>
   <li>Copy all the content of disk d: into disk c: and you are done. xcopy is not available on the basic FreeDOS image, so it will be a lot of fun in typing "mkdir" and "copy" until done. This is where basic DOS commands skills are needed. Anyway, on your disk image from Virtualbox you should have xcopy: don't do like me, copy it on c: first ;) <br>
   <li>Reboot your BOCHS machine and try using Lotus from ssh (suggested: run INSTALL into the Lotus folder, you will have to try different graphic settings for it to work correctly)
   

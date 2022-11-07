@@ -1,6 +1,6 @@
 I am planning to document the process of running an old (licensed) version of LOTUS123 on the reMarkable tablet, via BOCHS emulation.
 <br><br>
-DISCLAIMER<br><br>
+<h1>DISCLAIMER</h1><br><br>
 Still a work in progress!<br><br>
 Everything is published 'as-is', no responsability taken. Some steps may be different from a box to another, please take this as a general, not precise or detailed guide.<br><br>
 

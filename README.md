@@ -19,6 +19,7 @@ So I choose Lotus123, which I used back in school, and I still got a valid licen
   Basic linux knowledge<br>
   Basic DOS commands knowledge (or google skills)<br>
   Basic Virtualbox and BOCHS knowledge
+  A decent amount of coffee and time to debug BOCHS laziness in seeing your imgs as drives :O
   
 <h2>WHY VIRTUALBOX</h2>
 Lotus123 v.2.4 comes in a 9 disk setup. I first tried to extract those images to create a new one to run in bochs, but Lotus is a bit choosy, it will not install this way. Here's why Virtualbox. It lets you mount floppy images on the fly, BOCHS don't (or I don't know, anyway..).

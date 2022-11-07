@@ -54,5 +54,10 @@ Now you must register the new app to be seen by oxide launcer. In your reMarkabl
 Refresh oxide apps, you should see the FreeDOS icon, by taping it yaft comes up, and the BOCHS emulator start your FreeDOS machine on the reMarkable.<br>
 Season as you like, i made a simple 123.bat file to launch directly Lotus, or you can add a command in your AUTOEXEC.BAT to autostart it.
 
-<br><br>
+<h2>VERY, VERY BASIC TROUBLESHOOTING</h2>
+BOCHS with FreeDOS is choosy, due to limitations both of BOCHS and FreeDOS (more on the last), it may be needed to use <b>fdisk</b> into your reMarkable DOS box, to create partitions, than load back the img to Virtualbox to exchange files betweeen you and your newborn reMarkaDOS<br>
+FreeDOS in BOCHS doesn't eat disk images always the right way, it has to do with disk geometry, don't try to mount big images, it's DOS..<br>
+Once you run a full copy of FreeDOS on BOCHS you will be able to mount almost everything, cd images included... since then, you will have to struggle to make BOCHS eat your images :(<br>
+Be careful: if you install the WYSIWYG addon during the installation process (like i did) your Lotus won't start on reMarkable. If you did this mistake, delete all the WYSIWYG files in the Lotus folder (i didn't delete the WYSIWYG folder indeed, just the files) and delete the 123.cnf file, the startup of Lotus will be slower, but you will be able to use it without errors.<br>
+Graphic issues: try to f-ck around with INSTALL.EXE, try different graphic settings and you will be fine!<br><br>
 gat.

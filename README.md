@@ -38,10 +38,10 @@ Now you have a working FreeDOS in Virtualbox, with Lotus installed, try if it wo
 <h2>CONVERTING VIRTUALBOX MACHINE, AND WHY</h2>
 I tried several ways to get my Lotus into BOCHS, bximage which creates BOCHS images was not a thing, I am too lazy to be able to write into those read only images. Other means went into failure (I will not get into this...). So I just converted my Virtualbox VDI disk containg all software and system, into an IMG file to be used into BOCHS (and updated my FreeDOS installation on BOCHS, because the full image can't be read by the emulator - almost in my case - don't ask me why...).<br><br>
 
-  Use the Virtualbox tools to convert your image: vboxmanage clonehd --format RAW source.vdi destination.img<br>
-  Rename your destination.img, let's assume file.img, and scp it to remarkable (<b>scp file.img root@your-remarkable-ip:/home/root</b>)<br>
-  On reMarkable, move file.img in your freedos-img folder (<b>mv file.img freedos-img</b>)<br>
-  Modify yourc bochsrc file to include a new drive (<b>ata2-slave:  type=disk, path=file.img</b>)<br>
+  Use the Virtualbox tools to convert your image: <b>vboxmanage clonehd --format RAW source.vdi destination.img</b><br>
+  Rename your destination.img, let's assume file.img, and scp it to remarkable:<b>scp file.img root@your-remarkable-ip:/home/root</b><br>
+  On reMarkable, move file.img in your freedos-img folder:<b>mv file.img freedos-img</b><br>
+  Modify yourc bochsrc file to include a new drive: <b>ata2-slave:  type=disk, path=file.img</b><br>
   Run BOCHS on reMarkable via ssh and cross your fingers. If you can access your new drive with <b>d:</b>, you are almost done, else let me know if you manage to debug the issue :)<br>
   Copy all the content of disk d: into disk c: and you are done (xcopy is not available on the basic FreeDOS image, so it will be a lot of fun in typing "mkdir" and "copy" until done. This is where basic DOS commands skills are needed.<br>
   Reboot your BOCHS machine and try using Lotus from ssh (suggested: run INSTALL into the Lotus folder, you will have to try different graphic settings for it to work correctly)

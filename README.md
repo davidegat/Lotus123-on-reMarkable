@@ -14,7 +14,7 @@ BOCHS is available on rM thans to toltec repositories, Lotus 123 is a powerful p
   A linux box + virtualbox and relative tools<br>
   Lotus123 2.4 disk images and a valid license, if possible ;)<br>
   The BOCHS emulator (available on toltec repository)<br>
-  A minimal FreeDOS running copy on BOCHS<br>
+  A minimal FreeDOS running copy on BOCHS (reMarkable side)<br>
   A full FreeDOS running copy on Virtualbox<br>
   I have no time to get technical enough, so you will also need: Basic linux, DOS, Virtualbox and BOCHS knowledge, or google skills.<br>
   A decent amount of coffee and time to debug BOCHS laziness in seeing your imgs as drives :O

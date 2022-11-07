@@ -6,7 +6,7 @@ Everything is published 'as-is', no responsability taken. Some steps may be diff
 
 <h2>BACKGROUND</h2>
 As a reMarkable user I always wanted to get some useful apps to expand my possibilites, a spreadsheet is much needed in my teacher job. Unfortunately there is no native app for that, except for some linux apps like SC, which I don't want to get crazy to compile on my ARM reMarkable. But what about emulating DOS on rM via BOCHS and getting back to the old good 90's? :)<br>
-BOCHS is available on rM thans to toltec repositories, Lotus 123 is a powerful piece of software I used back in school, and I still got a valid license for, so why not?
+BOCHS is available on rM thanks to toltec repositories, Lotus 123 is a powerful piece of software I used back in school, and I still got a valid license for, so why not?
 
 <h2>REQUIREMENTS</h2>
   The reMarkable Tablet (1 or 2)<br>

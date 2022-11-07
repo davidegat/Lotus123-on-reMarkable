@@ -1,14 +1,14 @@
 I am planning to document the process of running an old (licensed) version of LOTUS123 on the reMarkable tablet, via BOCHS emulation.
 <br><br>
-<h2>DISCLAIMER</h2><br><br>
+<h2>DISCLAIMER</h2>
 Still a work in progress!<br><br>
 Everything is published 'as-is', no responsability taken. Some steps may be different from a box to another, please take this as a general, not precise or detailed guide.<br><br>
 
-BACKGROUND<br>
+<h2>BACKGROUND</h2>
 As a reMarkable user I always wanted to get some useful apps to expand my possibilites, a spreadsheet is much needed in my teacher job. Unfortunately there is no native app for that, except for some linux apps like SC, which I don't want to get crazy to compile on my rM. But what about emulating DOS and getting back to the old good 90's software, that taught excel to be what it is now? :)<br>
 So I choose Lotus123, which I used back in school, and I still got a valid license for.
-<br><br>
-REQUIREMENTS:<br>
+
+<h2>REQUIREMENTS</h2>
   The reMarkable Tablet (1 or 2)<br>
   Basic reMarkable hacking (toltec repository, oxide laucher, yaft, ssh access to the thing)<br>
   A linux box + virtualbox and relative tools<br>
@@ -18,11 +18,11 @@ REQUIREMENTS:<br>
   A full FreeDOS running copy on Virtualbox<br>
   Basic linux knowledge<br>
   Basic DOS commands knowledge (or google skills)<br>
-  <br><br>
-WHY VIRTUALBOX<br>
+  
+<h2>WHY VIRTUALBOX</h2>
 Lotus123 v.2.4 comes in a 9 disk setup. I first tried to extract those images to create a new one to run in bochs, but Lotus is a bit choosy, it will not install this way. Here's why Virtualbox. It lets you mount floppy images on the fly, BOCHS don't (or I don't know, anyway..).
-<br><br>
-PREPARATION<br>
+
+<h2>PREPARATION</h2>
   Install Virtualbox on your machine (use your favorite package manager) and run a FreeDOS 1.3 LiveCD from it. (freedos.org)<br>
   Install BOCHS on your reMarkable. You must have toltec repositories (toltec-dev.org), just type: opkg install bochs<br>
   Download the pre-made FreeDOS image for BOCHS, it works out the box (https://sourceforge.net/projects/bochs/files/Disk%20Images/FreeDos/) you will upgrade it later.<br>

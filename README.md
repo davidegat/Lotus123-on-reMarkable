@@ -3,7 +3,7 @@ See it in action: https://www.dropbox.com/s/nvuqo4zncsqhizt/YouCut_20221107_2228
 <br><br>
 <h2>DISCLAIMER</h2>
 This guide is still a work in progress!<br><br>
-Everything is published 'as-is', no responsability taken. Some steps may be different depending on your setup, please take this as a general, inspiring, not detailed guide. I am not a programmer, just an enthusiast linux user with some (few) skills, please understand. If you can do better, let me know, I just hope this may be an inspiration for further users to use the possibilities of old software on rM!
+Everything is published 'as-is', no responsability taken. Some steps may be different depending on your setup, please take this as a general, inspiring, not detailed guide. I am not a programmer, just an enthusiast linux user with some (few) skills, please understand. 
 
 <h2>BACKGROUND</h2>
 As a <a href="https://www.remarkable.com">reMarkable</a> user I always wanted to get some useful apps to expand my possibilites, a spreadsheet is what I needed more as a teacher. Unfortunately, there's still no native spreadsheet app for reMarkable, except for some linux apps like SC, and I didn't want to get crazy porting it on my ARM reMarkable. But what about emulating DOS on reMarkable via BOCHS and getting back to the old good 90's? :)<br>

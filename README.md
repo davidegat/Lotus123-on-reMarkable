@@ -1,4 +1,4 @@
-I am planning to document the process of running an old (licensed) version of LOTUS123 on the reMarkable tablet, via BOCHS emulation.
+I am planning to document the process of running an old (licensed) version of LOTUS 123 v4.2 on the reMarkable tablet, via BOCHS emulation.
 <br><br>
 <h2>DISCLAIMER</h2>
 Still a work in progress!<br><br>

@@ -9,8 +9,8 @@ As a reMarkable user I always wanted to get some useful apps to expand my possib
 BOCHS is available on rM thanks to toltec repositories, Lotus 123 is a powerful piece of software I used back in school, and I still got a valid license for, so why not?
 
 <h2>REQUIREMENTS</h2>
-  The reMarkable Tablet (1 or 2) and a motivated person, nerd-like should be fine<br>
-  Basic reMarkable hacking (toltec repository, oxide laucher, yaft, simple, ssh access to the thing)<br>
+  <li>The reMarkable Tablet (1 or 2) and a motivated person, nerd-like should be fine<br>
+  <li>Basic reMarkable hacking (toltec repository, oxide laucher, yaft, simple, ssh access to the thing)<br>
   A linux box + virtualbox and relative tools<br>
   Lotus123 2.4 disk images and a valid license, if possible ;)<br>
   The BOCHS emulator (available on toltec repository)<br>

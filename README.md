@@ -16,9 +16,7 @@ So I choose Lotus123, which I used back in school, and I still got a valid licen
   The BOCHS emulator (available on toltec repository)<br>
   A minimal FreeDOS running copy on BOCHS<br>
   A full FreeDOS running copy on Virtualbox<br>
-  Basic linux knowledge<br>
-  Basic DOS commands knowledge (or google skills)<br>
-  Basic Virtualbox and BOCHS knowledge
+  I have no time to get technical enough, so you will need too: Basic linux, DOS, Virtualbox and BOCHS knowledge, or google skills.<br>
   A decent amount of coffee and time to debug BOCHS laziness in seeing your imgs as drives :O
   
 <h2>WHY VIRTUALBOX</h2>

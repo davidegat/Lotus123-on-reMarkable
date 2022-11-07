@@ -11,7 +11,7 @@ BOCHS is available on rM thanks to Toltec repositories, Lotus 123 was a powerful
 
 <h2>REQUIREMENTS</h2>
   <li>The reMarkable Tablet (1 or 2) and a motivated person, nerd-like guy/girl/* should be fine<br>
-  <li>Basic reMarkable hacking:<a href="https://toltec-dev.org">Toltec</a> repository, oxide laucher, yaft, simple, ssh access to the thing<br>
+  <li>Basic reMarkable hacking: <a href="https://toltec-dev.org">Toltec</a> repository, oxide laucher, yaft, simple, ssh access to the thing<br>
   <li>A linux box + <a href="https://www.virtualbox.org">Virtualbox</a> and relative tools<br>
   <li>Lotus123 2.4 disk images and a valid license, if possible ;)<br>
   <li>The <a href="https://bochs.sourceforge.io/">BOCHS</a> emulator (available on Toltec repository)<br>

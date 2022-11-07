@@ -50,8 +50,8 @@ I tried several ways to get my Lotus into BOCHS, bximage which creates BOCHS ima
 scp to reMarkable both <b>dos.sh</b> and <b>startdos.sh</b> on /home/root.<br>
 <b>dos.sh</b> a simple "app" for reMarkable which runs BOCHS via yaft (simple package needed!)<br>
 <b>startdos.sh</b> a basic shell script called by dos.sh to be run under yaft.<br>
-Now you must registre the new app to be seen by oxide launcer. In your reMarkable type <b>rot apps call registerApplication 'QVariantMap:{"name": "FreeDOS", "bin": "/home/root/dos.sh"}'</b><br>
-Refresh oxide apps, you should see yaft coming up, and the BOCHS emulator start your FreeDOS machine on reMarkable.<br>
+Now you must register the new app to be seen by oxide launcer. In your reMarkable type <b>rot apps call registerApplication 'QVariantMap:{"name": "FreeDOS", "bin": "/home/root/dos.sh"}'</b><br>
+Refresh oxide apps, you should see the FreeDOS icon, by taping it yaft comes up, and the BOCHS emulator start your FreeDOS machine on the reMarkable.<br>
 Season as you like, i made a simple 123.bat file to launch directly Lotus, or you can add a command in your AUTOEXEC.BAT to autostart it.
 
 <br><br>

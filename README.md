@@ -23,7 +23,7 @@ BOCHS is available on rM thans to toltec repositories, Lotus 123 is a powerful p
 Lotus 123 v.2.4 comes in a 9, 5.25-inch disk setup. I first tried to extract images to create a new one to run in bochs, but Lotus is a bit choosy, it will not install this way. Here's why Virtualbox, it lets you mount floppy images on the fly, BOCHS don't (or I don't know how to easily do it, anyway..).
 
 <h2>PREPARATION</h2>
-  Install Virtualbox on your machine (use your favorite package manager) and run a FreeDOS 1.3 LiveCD from it from https://freedos.org/download.<br>
+  Install Virtualbox on your machine (use your favorite package manager) and run a FreeDOS 1.3 LiveCD from it. https://freedos.org/download.<br>
   Install BOCHS on your reMarkable. You must have toltec repositories (toltec-dev.org), just ssh to your reMarkable and type: <b>opkg install bochs</b><br>
   Download the pre-made FreeDOS image for BOCHS, it works out the box (https://sourceforge.net/projects/bochs/files/Disk%20Images/FreeDos/) you will upgrade it later.<br> Scp it to your reMarkable: <b>scp fdos-10meg.tar.gz root@your-remarkable-ip:/home/root</b><br>
   ssh to your reMarkable and extract your FreeDOS (tar xfvz fdos-10meg.tar.gz), files goes into freedos-img folder, try if it works with BOCHS, there should be no problem.. <br>

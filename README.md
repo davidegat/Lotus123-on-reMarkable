@@ -6,7 +6,7 @@ This guide is still a work in progress!<br><br>
 Everything is published 'as-is', no responsability taken. Some steps may be different depending on your setup, please take this as a general, inspiring, not detailed guide. I am not a programmer, just an enthusiast linux user with some (few) skills, please understand.
 
 <h2>BACKGROUND</h2>
-As a <a href="https://www.remarkable.com">reMarkable</a> user I always wanted to get some useful apps to expand my possibilites, a spreadsheet is what I wanted more as a teacher. Unfortunately, there's still no native spreadsheet app for reMarkable, except for some linux apps like SC, and I didn't want to get crazy porting it on my ARM reMarkable. But what about emulating DOS on reMarkable via BOCHS and getting back to the old good 90's? :)<br>
+As a <a href="https://www.remarkable.com">reMarkable</a> user I always wanted to get some useful apps to expand my possibilites, a spreadsheet is what I needed more as a teacher. Unfortunately, there's still no native spreadsheet app for reMarkable, except for some linux apps like SC, and I didn't want to get crazy porting it on my ARM reMarkable. But what about emulating DOS on reMarkable via BOCHS and getting back to the old good 90's? :)<br>
 BOCHS is available on rM thanks to Toltec repositories, Lotus 123 was a powerful piece of software I used back in school, and I still got a license, so why not? :D
 
 <h2>REQUIREMENTS</h2>

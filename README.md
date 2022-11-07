@@ -10,7 +10,7 @@ BOCHS is available on rM thanks to toltec repositories, Lotus 123 is a powerful 
 
 <h2>REQUIREMENTS</h2>
   The reMarkable Tablet (1 or 2)<br>
-  Basic reMarkable hacking (toltec repository, oxide laucher, yaft, ssh access to the thing)<br>
+  Basic reMarkable hacking (toltec repository, oxide laucher, yaft, simple, ssh access to the thing)<br>
   A linux box + virtualbox and relative tools<br>
   Lotus123 2.4 disk images and a valid license, if possible ;)<br>
   The BOCHS emulator (available on toltec repository)<br>
@@ -47,6 +47,12 @@ I tried several ways to get my Lotus into BOCHS, bximage which creates BOCHS ima
   Reboot your BOCHS machine and try using Lotus from ssh (suggested: run INSTALL into the Lotus folder, you will have to try different graphic settings for it to work correctly)
   
 <h2>ON REMARKABLE</h2>
-I will post the necessary files to run an app on reMarkable, which will be registered with the rot tool, that launches your bochs emulator into yaft. From here you will run your Lotus software, and finally have a spreadsheed on your reMarkable (see photos).
+scp to reMarkable both <b>dos.sh<b> and <b>startdos.sh</b> on /home/root.<br>
+<b>dos.sh</b> a simple "app" for reMarkable which runs BOCHS via yaft (simple package needed!)<br>
+<b>startdos.sh</b> a basic shell script called by dos.sh to be run under yaft.<br>
+Now you must registre the new app to be seen by oxide launcer. In your reMarkable type <b>rot apps call registerApplication 'QVariantMap:{"name": "FreeDOS", "bin": "/home/root/dos.sh"}'</b><br>
+Refresh oxide apps, you should see yaft coming up, and the BOCHS emulator start your FreeDOS machine on reMarkable.<br>
+Season as you like, i made a simple 123.bat file to launch directly Lotus, or you can add a command in your AUTOEXEC.BAT to autostart it.
+
 <br><br>
 gat.

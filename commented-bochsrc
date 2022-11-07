@@ -14,7 +14,7 @@ floppyb: 1_44=b.img, status=inserted # ..or wipe those lines
 # bximage will prompt you what needed, easy.
 
 ata0-master: type=disk, path=c.img, cylinders=306, heads=4, spt=17
-ata0-slave: type=disk, path="file.img", mode=flat
+ata0-slave: type=disk, path=file.img, mode=flat
 boot: c
 log: bochsout.txt
 cpu: count=2, ips=38000000 # check what's best for you

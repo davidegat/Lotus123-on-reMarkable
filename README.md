@@ -35,7 +35,7 @@ Lotus 123 v.2.4 comes in a 9, 5.25-inch disk setup. I first tried to extract ima
 
 Now you have a working FreeDOS in Virtualbox, with Lotus installed, try if it works and stop your virtual machine.
 
-<h2>CONVERTING VIRTUALBOX MACHINE, AND WHY</h2>
+<h2>CONVERTING VIRTUALBOX VDI DRIVE, AND WHY</h2>
 I tried several ways to get my Lotus into BOCHS, bximage which creates BOCHS images was not a thing, I am too lazy to be able to write into those read only images. Other means went into failure (I will not get into this...). So I just converted my Virtualbox VDI disk containg all software and system, into an IMG file to be used into BOCHS (and updated my FreeDOS installation on BOCHS, because the full image can't be read by the emulator - almost in my case - don't ask me why...).<br><br>
 
   <li>Use the Virtualbox tools to convert your image: <b>vboxmanage clonehd --format RAW source.vdi destination.img</b><br>

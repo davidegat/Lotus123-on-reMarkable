@@ -60,5 +60,8 @@ Ok, we have choosiness in the installation process by Lotus, but also I failed s
 <li>FreeDOS in BOCHS doesn't eat disk images always the right way, it has to do with disk geometry, don't try to mount big images, it's DOS..<br>
 <li>Once you run a full copy of FreeDOS on BOCHS you will be able to mount almost everything, cd images included... since then, you will have to struggle to make BOCHS eat your images :(<br>
 <li>Be careful: if you install the WYSIWYG addon during the installation process (like I did) your Lotus won't start on reMarkable. If you did this mistake, delete all the WYSIWYG files in the Lotus folder (i didn't delete the WYSIWYG folder indeed, just the files) and delete the 123.cnf file, the startup of Lotus will be slower, but you will be able to use it without errors.<br>
-<li>Graphic issues: try to f-ck around with INSTALL.EXE, try different graphic settings and you will be fine!<br><br>
-gat.
+<li>Graphic issues: try to f-ck around with INSTALL.EXE, try different graphic settings and you will be fine!
+  <h2>JUST TO BE CLEAR</h2>
+I could simply upload the BOCHS c: drive image of my full system, and let you run it without any fuss on your reMarkable, but... no? I just can't spread copyrighted software. Anyway, you can of course backup the c.img file to restore it in case of an update or else, or just to put it into another rM of your own.<br><br>
+Enjoy.<br>
+Gat.

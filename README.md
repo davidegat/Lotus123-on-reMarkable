@@ -21,7 +21,7 @@ BOCHS is available on rM thanks to Toltec repositories, Lotus 123 was a powerful
   <li>A decent amount of coffee and time to debug BOCHS laziness in seeing your imgs as drives :O
   
 <h2>WHY VIRTUALBOX</h2>
-Lotus 123 v.2.4 comes in 9 parts, 5.25-inch disk setup. I first tried to extract images to create a new one to run in bochs, but Lotus is a bit choosy, it will not install this way. Here's why Virtualbox, it lets you mount floppy images on the fly, BOCHS don't (or I don't know how to easily do it in a text enviroment like bash, anyway..).
+Lotus 123 v.2.4 comes in 9 parts, 5.25-inch disk setup. I first tried to extract images to create a new one to run in bochs, but Lotus is a bit choosy, it will not install this way, and something like <a href="https://forum.winworldpc.com/uploads/editor/q4/vd8bs7xeckcd.png">a bad error</a> happens. Here's why Virtualbox, it lets you mount floppy images on the fly, BOCHS don't (or I don't know how to easily do it in a text enviroment like bash, anyway..).
 
 <h2>FIRST STEPS</h2>
   <li>Install Virtualbox on your machine (use your favorite package manager) and run a FreeDOS 1.3 LiveCD from it. https://freedos.org/download.<br>

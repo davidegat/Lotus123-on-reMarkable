@@ -76,7 +76,7 @@ Now that you got your reMarkable FreeDOS emulation set up, you can explore furth
 <li>If you set too much memory, cores or ips on your BOCHS machine, Lotus startup will be even slower (!), in my setup 512 megs even prevent BOCHS  from booting. I found out that <br><b>megs: 320</b><br><b>vga: extension=vbe, update_freq=5, realtime=1</b><br><b>cpu: count=2, ips=25000000</b><br>works just fine for me, and Lotus starts up more quickly!
 
 <li><b>An easter egg: in Lotus 123 the 3 reMarkable buttons work, the middle one brings you to the first cell, the side buttons lets you move left and right through cells and menu. Nice, isn't it?</b>
-<h2>How to stop BOCHS once lanuced?</h2>
+<h2>How to stop BOCHS once launched?</h2>
 <h3>Via terminal:</h3> ssh again to your reMarkable and kill BOCHS, or install tmux to have access a second shell if you run your Lotus via ssh. A simple script to get the PID and kill it right away is included in the repository.
 <h3>On reMarkable:</h3> simply kill your oxide FreeDOS app the regular way (long press on icon and kill button), BOCHS will die too.<br>
 Due to the command line options, BOCHS will ignore .lock files remaining when BOCHS is killed, so it can start again the next time without lock errors.<br>  

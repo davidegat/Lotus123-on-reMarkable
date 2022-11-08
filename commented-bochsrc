@@ -16,6 +16,6 @@ floppyb: 1_44=b.img, status=inserted # ..or wipe those lines
 ata0-master: type=disk, path=c.img, cylinders=306, heads=4, spt=17
 ata0-slave: type=disk, path=file.img, mode=flat
 boot: c
-log: bochsout.txt
+log: bochsout.txt # Optional, for debugging purposes
 cpu: count=2, ips=38000000 # check what's best for you
 display_library: term # IMPORTANT: it should run in terminal!

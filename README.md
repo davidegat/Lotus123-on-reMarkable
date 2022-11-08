@@ -73,7 +73,7 @@ Now that you got your reMarkable FreeDOS emulation set up, you can explore furth
 <li>Graphic issues: try to f-ck around with INSTALL.EXE, try different graphic settings and you will be fine!
 <li>I managed to attach a virtual ethernet in BOCHS, then I tried to configure BOCHS to use reMarkable dhcp server running for usb interfaces, with still no results. It is not so necessary, but it would be fine to dowload dos software directly from your reMarkaDOS with the LINKS browser  ;) let me know if you can.
 <li>Some dos software require a mouse or it will not run. FreeDOS offers "cutemouse" software, but everything I tried resulted only in a mouse recognized by FreeDOS, with no results while running on the reMarkable tablet. So forget this mouse based software, and have fun with the tiny yaft keyboard :(
-<li>If you set too much memory, cores or ips on your BOCHS machine, Lotus startup will be even slower (!), in my setup 512 megs even prevent BOCHS  from booting. I found out that <b>megs: 320</b> - <b>vga: extension=vbe, update_freq=5, realtime=1</b> - <b>cpu: count=2, ips=25000000</b> - works just fine for me, and Lotus starts up more quickly!
+<li>If you set too much memory, cores or ips on your BOCHS machine, Lotus startup will be even slower (!), in my setup 512 megs even prevent BOCHS  from booting. I found out that <br><b>megs: 320</b><br><b>vga: extension=vbe, update_freq=5, realtime=1</b><br><b>cpu: count=2, ips=25000000</b><br>works just fine for me, and Lotus starts up more quickly!
 
 <li><b>An easter egg: in Lotus 123 the 3 reMarkable buttons work, the middle one brings you to the first cell, the side buttons lets you move left and right through cells and menu. Nice, isn't it?</b>
 <h2>How to stop BOCHS once lanuced?</h2>

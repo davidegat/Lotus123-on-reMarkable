@@ -29,6 +29,7 @@ Lotus 123 v.2.4 comes in 9 parts, 5.25-inch disk setup. I first tried to extract
       <li>Install BOCHS on your reMarkable. You must have toltec repositories (instructions on how to install the repository on your reMarkable at https://toltec-dev.org). Ssh into your reMarkable and type: <b>opkg install bochs</b> to get it.<br>
   <li>Download the pre-made FreeDOS image for BOCHS, it works out the box on your reMarkable! (https://sourceforge.net/projects/bochs/files/Disk%20Images/FreeDos/) we will upgrade it later.<br> <li>Scp it to your reMarkable: <b>scp fdos-10meg.tar.gz root@your-remarkable-ip:/home/root</b><br>
   <li>ssh to your reMarkable and extract your FreeDOS (<b>tar xfvz fdos-10meg.tar.gz</b>), files should be extracted into freedos-img folder, get into the folder try if it works: <b>bochs -q -unlock -f bochsrc</b>.<br>
+  <li><b>Please note:</b> in bochsrc the option <b>display_library: term</b> is mandatory, or BOCHS won't start!
   <li>Google for your Lotus123 v2.4 images, extract files on your linux box. Don't violate copyright doing this, make sure you have a license.
 
 <h2>Installing Lotus in Virtualbox machine</h2>

@@ -56,7 +56,7 @@ Ok, we have choosiness in the installation process by Lotus, but also I failed s
 <li>Refresh oxide apps on your reMarkable: you now should see the FreeDOS icon, by tapping it yaft comes up, and the BOCHS emulator starts your FreeDOS machine on the reMarkable.<br>
 <li>Season it as you like, I made a simple 123.bat file to launch directly Lotus, or you can add a command in your AUTOEXEC.BAT to autostart it.
 
-  <h2>THINK ABOUT IT...</B>
+  <h2>THINK ABOUT IT...</h2>
 Now that you got your reMarkable FreeDOS emulation set up, you can explore further possibilities. FreeDOS website gives you the opportunity to download extra free software images to use on your emulator. You may have old pieces of software around, that now you can use on your tablet! Do not expect every software to work in this enviroment, anyway...
   
 <h2>VERY, VERY BASIC TROUBLESHOOTING</h2>

@@ -5,7 +5,7 @@ megs: 320 # Choose your own memory size, this works good for me
 # No need to change the next 3 lines
 romimage: file=$BXSHARE/BIOS-bochs-latest
 vgaromimage: file=$BXSHARE/VGABIOS-lgpl-latest
-vga: extension=vbe, update_freq=5
+vga: extension=vbe, update_freq=5, realtime=1
 
 floppya: 1_44=a.img, status=inserted # Choose your floppy images, if needed
 floppyb: 1_44=b.img, status=inserted # ..or wipe those lines

@@ -48,8 +48,8 @@ Ok, we have choosiness in the installation process by Lotus, but also I failed s
   <li>Copy all the content of disk d: into disk c: and you are done. xcopy is not available on the basic FreeDOS image, so it will be a lot of fun in typing "mkdir" and "copy" until done. This is where basic DOS commands skills are needed. Anyway, on your disk image from Virtualbox you should have xcopy: don't do like me, copy it on c: first ;) <br>
   <li>Reboot your BOCHS machine and try using Lotus from ssh (suggested: run INSTALL into the Lotus folder, you will have to try different graphic settings for it to work correctly)
     
-    <h2>IF BOCHS DOESN'T EAT MY IMAGE?</h2>
-    Try another way, hack into BOCHS by mounting on drive a the FreeDOS 1.3 Floppy Edition, wipe the existing FreeDOS system and reboot. You should have a better enviroment now with some drivers, and -fingers crossed- mount your own converted image, and even mount iso images as cdroms (see <a href="https://bochs.sourceforge.io/doc/docbook/user/bochsrc.html">BOCHS documentation</a>). Just remember to get back to <b>bochsrc</b> and boot from c: once done.
+<h2>IF BOCHS DOESN'T EAT MY IMAGE?</h2>
+Try another way, hack into BOCHS by mounting on drive a the FreeDOS 1.3 Floppy Edition, wipe the existing FreeDOS system and reboot. You should have a better enviroment now with some drivers, and -fingers crossed- mount your own converted image, and even mount iso images as cdroms (see <a href="https://bochs.sourceforge.io/doc/docbook/user/bochsrc.html">BOCHS documentation</a>). Just remember to get back to <b>bochsrc</b> and boot from c: once done.
 
 <h2>ON REMARKABLE</h2>
 <li>scp to reMarkable both <b>dos.sh</b> and <b>startdos.sh</b> on /home/root.<br>

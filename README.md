@@ -29,7 +29,7 @@ Lotus 123 v.2.4 comes in 9 parts, 5.25-inch disk setup. I first tried to extract
     <li>Mount a FreeDOS 1.3 LiveCD on Virtualbox https://freedos.org/download. Start the machine booting frome livecd, and follow the instructions to install FreeDOS on your virtual drive.<br>
       <li>Install BOCHS on your reMarkable. You must have toltec repositories (instructions on how to install the repository on your reMarkable at https://toltec-dev.org). Ssh into your reMarkable and type: <br><code>opkg install bochs</code><br> to get it.<br>
   <li>Download the pre-made FreeDOS image for BOCHS, it works out the box on your reMarkable! (https://sourceforge.net/projects/bochs/files/Disk%20Images/FreeDos/) we will upgrade it later.<br> <li>Scp it to your reMarkable: <br><code>scp fdos-10meg.tar.gz root@your-remarkable-ip:/home/root</code><br>
-  <li>ssh to your reMarkable and extract your FreeDOS <br><code>tar xfvz fdos-10meg.tar.gz</code><br> files should be extracted into freedos-img folder, get into the folder try if it works: <br><code>bochs -q -unlock -f bochsrc</code>.<br>
+  <li>ssh to your reMarkable and extract your FreeDOS <br><code>tar xfvz fdos-10meg.tar.gz</code><br> files should be extracted into freedos-img folder, get into the folder try if it works: <br><code>bochs -q -unlock -f bochsrc</code><br>
   <li><b>Please note:</b> in bochsrc the option <code>display_library: term</code> is mandatory, or BOCHS won't start!
   <li>Google for your Lotus123 v2.4 images, extract files on your linux box. Don't violate copyright doing this, make sure you have a license.
 
@@ -55,7 +55,7 @@ Try another way, hack into BOCHS by mounting on drive a the FreeDOS 1.3 Floppy E
 You should have a better enviroment now with some drivers, and -fingers crossed- mount via bochsrc your own converted image, and even mount iso images as cdroms (see <a href="https://bochs.sourceforge.io/doc/docbook/user/bochsrc.html">BOCHS documentation</a>). 
 <h2>On reMarkable</h2>
 <li>scp to reMarkable both <b>dos.sh</b> and <b>startdos.sh</b> on /home/root.<br>
-<li><b>dos.sh</b> a simple "app" for reMarkable, it uses the "simple" scripting language, if you didn't installed it in your previous geeky journeys, do it with: <br><code>opkg install simple</code>.
+<li><b>dos.sh</b> a simple "app" for reMarkable, it uses the "simple" scripting language, if you didn't installed it in your previous geeky journeys, do it with: <br><code>opkg install simple</code>
 <li><b>startdos.sh</b> a basic shell script called by dos.sh to run your VM under yaft. I prefer this than a direct command in dos.sh, so that I can launch my VM via ssh with no need to write the whole BOCHS command.<br>
 <li>Now you must register the new app to be seen by oxide launcer. In your reMarkable type <br><code>rot apps call registerApplication 'QVariantMap:{"name": "FreeDOS", "bin": "/home/root/dos.sh"}'</code><br>
 <li>Refresh oxide apps on your reMarkable: you now should see the FreeDOS icon, by tapping it yaft comes up, and the BOCHS emulator starts your FreeDOS machine on the reMarkable.<br>

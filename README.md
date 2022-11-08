@@ -77,7 +77,10 @@ Now that you got your reMarkable FreeDOS emulation set up, you can explore furth
 
 <li><b>An easter egg: in Lotus 123 the 3 reMarkable buttons work, the middle one brings you to the first cell, the side buttons lets you move left and right through cells and menu. Nice, isn't it?</b>
 <h2>How to stop BOCHS once lanuced?</h2>
-Well, you have to kill it via terminal, or just reboot reMarkable. You can also ssh again to your reMarkable and kill BOCHS, or kill it via a yaft terminal, or install tmux to have access a second shell if you run your Lotus via ssh. The startup options in the BOCHS command line provided, will ignore .lock files remaining when BOCHS is killed. A simple script to get the PID and kill it right away is included in the repository. Note: you can leave it running, it will not impact on your device performance, plus, once you tap again on the FreeDOS icon the same istance will come back, without running a new one. I usually leave it open once rM starts, and use it throughout the day.
+<h3>Via terminal:</h3> ssh again to your reMarkable and kill BOCHS, or install tmux to have access a second shell if you run your Lotus via ssh. A simple script to get the PID and kill it right away is included in the repository.
+<h3>On reMarkable:</h3> simply kill your oxide apps the regular way, BOCHS will die too.
+Due to the command line options, BOCHS will ignore .lock files remaining when BOCHS is killed.<br>  
+Note: you can leave it running, it will not impact on your device performance, plus, once you tap again on the FreeDOS icon the same istance will come back, without running a new one. I usually leave it open once rM starts, and use it throughout the day.
   <h2>Just to be clear</h2>
 I could simply upload the BOCHS c: drive image of my full system, and let you run it without any fuss on your reMarkable, but... no? I just can't spread copyrighted software. Anyway, you can of course backup the c.img file to restore it in case of an update or else, or just to put it into another rM of your own. To backup your setup, just use scp: <b>scp "root@your-remarkable-ip:/home/root/freedos-img/*" .</b> (don't forget the last dot).<br><br>
 Enjoy.<br>

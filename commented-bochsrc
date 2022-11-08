@@ -1,6 +1,6 @@
 # Use this config to transfer system and Lotus from file.img to main disk c: (c.img)
 
-megs: 448 # Choose your own memory size, this works good for me
+megs: 256 # Choose your own memory size, this works good for me
 
 # No need to change the next 3 lines
 romimage: file=$BXSHARE/BIOS-bochs-latest
@@ -17,5 +17,5 @@ ata0-master: type=disk, path=c.img, cylinders=306, heads=4, spt=17
 ata0-slave: type=disk, path=file.img, mode=flat
 boot: c
 log: bochsout.txt # Optional, for debugging purposes
-cpu: count=2, ips=38000000 # check what's best for you
+cpu: count=2, ips=20000000 # check what's best for you
 display_library: term # IMPORTANT: it should run in terminal!

@@ -27,37 +27,37 @@ Lotus 123 v.2.4 comes in 9 parts, 5.25-inch disk setup. I first tried to extract
 <h2>First steps</h2>
   <li>Install Virtualbox on your machine (use your favorite package manager), create a DOS machine on Virtualbox and a virtual drive. I suggest not an expandable one, but fixed, because when you will convert your disk into a BOCHS readable img it may be BIG. So, no 1gb expandable drive just to have 200mb of software in it, or you'll get a 1gb image. Choose a small size, you can expand it with bximage later on your reMarkable directly.
     <li>Mount a FreeDOS 1.3 LiveCD on Virtualbox https://freedos.org/download. Start the machine booting frome livecd, and follow the instructions to install FreeDOS on your virtual drive.<br>
-      <li>Install BOCHS on your reMarkable. You must have toltec repositories (instructions on how to install the repository on your reMarkable at https://toltec-dev.org). Ssh into your reMarkable and type: <b>opkg install bochs</b> to get it.<br>
-  <li>Download the pre-made FreeDOS image for BOCHS, it works out the box on your reMarkable! (https://sourceforge.net/projects/bochs/files/Disk%20Images/FreeDos/) we will upgrade it later.<br> <li>Scp it to your reMarkable: <b>scp fdos-10meg.tar.gz root@your-remarkable-ip:/home/root</b><br>
-  <li>ssh to your reMarkable and extract your FreeDOS (<b>tar xfvz fdos-10meg.tar.gz</b>), files should be extracted into freedos-img folder, get into the folder try if it works: <b>bochs -q -unlock -f bochsrc</b>.<br>
-  <li><b>Please note:</b> in bochsrc the option <b>display_library: term</b> is mandatory, or BOCHS won't start!
+      <li>Install BOCHS on your reMarkable. You must have toltec repositories (instructions on how to install the repository on your reMarkable at https://toltec-dev.org). Ssh into your reMarkable and type: <br><code>opkg install bochs</code><br> to get it.<br>
+  <li>Download the pre-made FreeDOS image for BOCHS, it works out the box on your reMarkable! (https://sourceforge.net/projects/bochs/files/Disk%20Images/FreeDos/) we will upgrade it later.<br> <li>Scp it to your reMarkable: <br><code>scp fdos-10meg.tar.gz root@your-remarkable-ip:/home/root</code><br>
+  <li>ssh to your reMarkable and extract your FreeDOS <br><code>tar xfvz fdos-10meg.tar.gz</code><br> files should be extracted into freedos-img folder, get into the folder try if it works: <br><code>bochs -q -unlock -f bochsrc</code>.<br>
+  <li><b>Please note:</b> in bochsrc the option <code>display_library: term</code> is mandatory, or BOCHS won't start!
   <li>Google for your Lotus123 v2.4 images, extract files on your linux box. Don't violate copyright doing this, make sure you have a license.
 
 <h2>Installing Lotus in Virtualbox machine</h2>
 
-Mount the first Lotus disk on Virtualbox and start your FreeDOS virtual machine, then move to your a: drive and start the installation process <b>a: -enter- install -enter</b>, this way Lotus choosiness goes away, but it will ask you further disks, which you will mount on the fly with Virtualbox until you reach disk9 and complete the installation. Oh good old msdos times...<br>
+Mount the first Lotus disk on Virtualbox and start your FreeDOS virtual machine, then move to your a: drive and start the installation process <code>a: -enter- install -enter</code>, this way Lotus choosiness goes away, but it will ask you further disks, which you will mount on the fly with Virtualbox until you reach disk9 and complete the installation. Oh good old msdos times...<br>
 
 Now you have a working FreeDOS machine in Virtualbox, with a Lotus copy installed upon, try if it works locally and stop your virtual machine.
 
 <h2>Converting Virtualbox VDI virtual drive, and why</h2>
 Ok, we have choosiness in the installation process by Lotus, but also I failed several times trying to get my Lotus into BOCHS. bximage which creates BOCHS images was not a thing for me, I am too lazy to be able to write into those read only images. Other methods went into failure, I will not get into this, still hurts... So I just converted my Virtualbox VDI disk with all software and system, into an IMG file to be used into BOCHS. Then I updated my FreeDOS installation on BOCHS, also because the full image can't be read by the emulator - almost in my case.<br><br>
 
-  <li>Use Virtualbox tools to convert your Virtualbox VDI disk image: <b>vboxmanage clonehd --format RAW source.vdi destination.img</b><br> where "source" is the name of your virtual hard drive on Virtualbox.
-  <li>Rename your destination.img, let's assume file.img, and scp it to remarkable: <b>scp file.img root@your-remarkable-ip:/home/root</b><br>
-  <li>On reMarkable, move file.img in your freedos-img folder: <b>mv file.img freedos-img</b><br>
-  <li>Modify yourc bochsrc configuration file to include a new drive: <b>ata0-slave:  type=disk, path=file.img, type=flat</b><br>
-  <li>Run BOCHS on reMarkable via ssh and cross your fingers. If you can access your new drive with the DOS command <b>d:</b>, you are almost done, else let me know if you had enough coffee and time to debug the issue :)<br>
+  <li>Use Virtualbox tools to convert your Virtualbox VDI disk image: <br><code>vboxmanage clonehd --format RAW source.vdi destination.img</code><br> where "source" is the name of your virtual hard drive on Virtualbox.
+  <li>Rename your destination.img, let's assume file.img, and scp it to remarkable:<br><code>scp file.img root@your-remarkable-ip:/home/root</code><br>
+  <li>On reMarkable, move file.img in your freedos-img folder: <br><code>mv file.img freedos-img</code><br>
+  <li>Modify yourc bochsrc configuration file to include a new drive: <br><code>ata0-slave:  type=disk, path=file.img, type=flat</code><br>
+  <li>Run BOCHS on reMarkable via ssh and cross your fingers. If you can access your new drive with the DOS command <code>d:</code>, you are almost done, else let me know if you had enough coffee and time to debug the issue :)<br>
   <li>Copy all the content of disk d: into disk c: and you are done. xcopy is not available on the basic FreeDOS image, so it will be a lot of fun in typing "mkdir" and "copy" until done. This is where basic DOS commands skills are needed. Anyway, on your disk image from Virtualbox you should have xcopy: don't do like me, copy it on c: first ;) <br>
   <li>Reboot your BOCHS machine and try using Lotus from ssh (suggested: run INSTALL into the Lotus folder, you will have to try different graphic settings for it to work correctly)
     
 <h2>What if BOCHS doesn't eat my image?</h2>
-Try another way, hack into BOCHS by mounting on drive a the FreeDOS 1.3 Floppy Edition, in <b>bochsrc</b> set the boot drive with <b>boot: a</b>, reboot from a:, copy the system from a: to c: overwriting the existing FreeDOS system, stop the machine. Get back to <b>bochsrc</b> to modify again the boot order, and boot from c: once done to test it out.
+Try another way, hack into BOCHS by mounting on drive a the FreeDOS 1.3 Floppy Edition, in <b>bochsrc</b> set the boot drive with <code>boot: a</code>, reboot from a:, copy the system from a: to c: overwriting the existing FreeDOS system, stop the machine. Get back to <b>bochsrc</b> to modify again the boot order, and boot from c: once done to test it out.
 You should have a better enviroment now with some drivers, and -fingers crossed- mount via bochsrc your own converted image, and even mount iso images as cdroms (see <a href="https://bochs.sourceforge.io/doc/docbook/user/bochsrc.html">BOCHS documentation</a>). 
 <h2>On reMarkable</h2>
 <li>scp to reMarkable both <b>dos.sh</b> and <b>startdos.sh</b> on /home/root.<br>
-<li><b>dos.sh</b> a simple "app" for reMarkable, it uses the "simple" scripting language, if you didn't installed it in your previous geeky journeys, do it with: <b>opkg install simple</b>.
+<li><b>dos.sh</b> a simple "app" for reMarkable, it uses the "simple" scripting language, if you didn't installed it in your previous geeky journeys, do it with: <br><code>opkg install simple</code>.
 <li><b>startdos.sh</b> a basic shell script called by dos.sh to run your VM under yaft. I prefer this than a direct command in dos.sh, so that I can launch my VM via ssh with no need to write the whole BOCHS command.<br>
-<li>Now you must register the new app to be seen by oxide launcer. In your reMarkable type <b>rot apps call registerApplication 'QVariantMap:{"name": "FreeDOS", "bin": "/home/root/dos.sh"}'</b><br>
+<li>Now you must register the new app to be seen by oxide launcer. In your reMarkable type <br><code>rot apps call registerApplication 'QVariantMap:{"name": "FreeDOS", "bin": "/home/root/dos.sh"}'</code><br>
 <li>Refresh oxide apps on your reMarkable: you now should see the FreeDOS icon, by tapping it yaft comes up, and the BOCHS emulator starts your FreeDOS machine on the reMarkable.<br>
 <li>Season it as you like, I made a simple 123.bat file to launch directly Lotus, or you can add a command in your AUTOEXEC.BAT to autostart it.
 
@@ -73,15 +73,15 @@ Now that you got your reMarkable FreeDOS emulation set up, you can explore furth
 <li>Graphic issues: try to f-ck around with INSTALL.EXE, try different graphic settings and you will be fine!
 <li>I managed to attach a virtual ethernet in BOCHS, then I tried to configure BOCHS to use reMarkable dhcp server running for usb interfaces, with still no results. It is not so necessary, but it would be fine to dowload dos software directly from your reMarkaDOS with the LINKS browser  ;) let me know if you can.
 <li>Some dos software require a mouse or it will not run. FreeDOS offers "cutemouse" software, but everything I tried resulted only in a mouse recognized by FreeDOS, with no results while running on the reMarkable tablet. So forget this mouse based software, and have fun with the tiny yaft keyboard :(
-<li>If you set too much memory, cores or ips on your BOCHS machine, Lotus startup will be even slower (!), in my setup 512 megs even prevent BOCHS  from booting. I found out that <br><b>megs: 320</b><br><b>vga: extension=vbe, update_freq=5, realtime=1</b><br><b>cpu: count=2, ips=25000000</b><br>works just fine for me, and Lotus starts up more quickly!
+<li>If you set too much memory, cores or ips on your BOCHS machine, Lotus startup will be even slower (!), in my setup 512 megs even prevent BOCHS  from booting. I found out that <br><code>megs: 320</code><br><code>vga: extension=vbe, update_freq=5, realtime=1</code><br><code>cpu: count=2, ips=25000000</code><br>works just fine for me, and Lotus starts up more quickly!
 
-<li><b>An easter egg: in Lotus 123 the 3 reMarkable buttons work, the middle one brings you to the first cell, the side buttons lets you move left and right through cells and menu. Nice, isn't it?</b>
+<li><b>Easter egg: in Lotus 123 the 3 reMarkable buttons work, the middle one brings you to the first cell, the side buttons lets you move left and right through cells and menu. Nice, isn't it?</b>
 <h2>How to stop BOCHS once launched?</h2>
 <h3>Via terminal:</h3> ssh again to your reMarkable and kill BOCHS, or install tmux to have access a second shell if you run your Lotus via ssh. A simple script to get the PID and kill it right away is included in the repository.
 <h3>On reMarkable:</h3> simply kill your oxide FreeDOS app the regular way (long press on icon and kill button), BOCHS will die too.<br>
 Due to the command line options, BOCHS will ignore .lock files remaining when BOCHS is killed, so it can start again the next time without lock errors.<br>  
 Note: you can leave it running, it will not impact on your device performance, plus, once you tap again on the FreeDOS icon the same istance will come back, without running a new one. I usually leave it open once rM starts, and use it throughout the day.
   <h2>Just to be clear</h2>
-I could simply upload the BOCHS c: drive image of my full system, and let you run it without any fuss on your reMarkable, but... no? I just can't spread copyrighted software. Anyway, you can of course backup the c.img file to restore it in case of an update or else, or just to put it into another rM of your own. To backup your setup, just use scp: <b>scp "root@your-remarkable-ip:/home/root/freedos-img/*" .</b> (don't forget the last dot).<br><br>
+I could simply upload the BOCHS c: drive image of my full system, and let you run it without any fuss on your reMarkable, but... no? I just can't spread copyrighted software. Anyway, you can of course backup the c.img file to restore it in case of an update or else, or just to put it into another rM of your own. To backup your setup, just use scp: <code>scp "root@your-remarkable-ip:/home/root/freedos-img/*" .</code> (don't forget the last dot).<br><br>
 Enjoy.<br>
 Gat.

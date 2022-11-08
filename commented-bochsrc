@@ -15,7 +15,8 @@ floppyb: 1_44=b.img, status=inserted # ..or wipe those lines
 
 ata0-master: type=disk, path=c.img, cylinders=306, heads=4, spt=17
 ata0-slave: type=disk, path=file.img, mode=flat
-boot: c
+
+boot: c # Play with it to change your boot order/drive
 log: bochsout.txt # Optional, for debugging purposes
-cpu: count=2, ips=15000000 # check what's best for you
+cpu: count=2, ips=25000000 # check what's best for you from 15000000 to 25000000
 display_library: term # IMPORTANT: it should run in terminal!

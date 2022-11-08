@@ -69,6 +69,6 @@ Now that you got your reMarkable FreeDOS emulation set up, you can explore furth
 <li>Some dos software require a mouse or it will not run. FreeDOS offers "cutemouse" software, but everything I tried resulted only in a mouse recognized by FreeDOS, with no results while running on the reMarkable tablet. So forget this mouse based software, and have fun with the tiny yaft keyboard :(
 <li><b>An easter egg: in Lotus 123 the 3 reMarkable buttons work, the middle one brings you to the first cell, the side buttons lets you move left and right through cells and menu. Nice, isn't it?</b>
   <h2>JUST TO BE CLEAR</h2>
-I could simply upload the BOCHS c: drive image of my full system, and let you run it without any fuss on your reMarkable, but... no? I just can't spread copyrighted software. Anyway, you can of course backup the c.img file to restore it in case of an update or else, or just to put it into another rM of your own.<br><br>
+I could simply upload the BOCHS c: drive image of my full system, and let you run it without any fuss on your reMarkable, but... no? I just can't spread copyrighted software. Anyway, you can of course backup the c.img file to restore it in case of an update or else, or just to put it into another rM of your own. To backup your setup, just use scp: <b>scp "root@your-remarkable-ip:/home/root/freedos-img/*" .</b> (don't forget the last dot).<br><br>
 Enjoy.<br>
 Gat.

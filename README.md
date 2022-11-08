@@ -33,7 +33,7 @@ Lotus 123 v.2.4 comes in 9 parts, 5.25-inch disk setup. I first tried to extract
 
 <h2>INSTALLING LOTUS ON VIRTUAL MACHINE</h2>
 
-<li>Mount the first Lotus disk on Virtualbox and start your FreeDOS virtual machine, then move to your a: drive and start the installation process <b>a: -enter- install -enter</b>, this way Lotus choosiness goes away, but it will ask you further disks, which you will mount on the fly with Virtualbox until you reach disk9 and complete the installation. Oh good old msdos times...<br><br>
+<li>Mount the first Lotus disk on Virtualbox and start your FreeDOS virtual machine, then move to your a: drive and start the installation process <b>a: -enter- install -enter</b>, this way Lotus choosiness goes away, but it will ask you further disks, which you will mount on the fly with Virtualbox until you reach disk9 and complete the installation. Oh good old msdos times...<br>
 
 Now you have a working FreeDOS machine in Virtualbox, with a Lotus copy installed upon, try if it works locally and stop your virtual machine.
 

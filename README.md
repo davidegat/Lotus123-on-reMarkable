@@ -8,7 +8,7 @@ Everything is published 'as-is', no responsability taken. Some steps may be diff
 <h2>Background</h2>
 As a <a href="https://www.remarkable.com">reMarkable</a> user, I always wanted to get some useful apps to expand my possibilites, a spreadsheet is what I needed more as a teacher. Unfortunately, there's still no native spreadsheet app for reMarkable, except for some linux software like "SC", but didn't want to get crazy porting it on reMarkable. But, what about emulating DOS on reMarkable via BOCHS and getting back to the old good 90's? :)<br>
 BOCHS is available on reMarkable thanks to Toltec repositories, Lotus 123 was a powerful piece of software I used back in school, and I still got a license, so why not? :D<br><br>
-Lotus 123 has everything you can expect from a spreadsheet, like formulas and graps, it is useful both for basic and advanced use and it can compete with modern spreadsheet software easily!
+Lotus 123 has everything you can expect from a spreadsheet, like formulas and charts, it is useful both for basic and advanced use and it can compete with modern spreadsheet software easily!
 
 <h2>Requirements</h2>
   <li>The reMarkable Tablet (1 or 2) and a motivated person, nerd-like guy/girl/* should be fine<br>

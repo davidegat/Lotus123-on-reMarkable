@@ -65,7 +65,7 @@ You should have a better enviroment now with some drivers, and -fingers crossed-
 <li><b>startdos.sh</b> a basic shell script called by dos.sh to run your VM under yaft. I prefer this than a direct command in dos.sh, so that I can launch my VM via ssh with no need to write the whole BOCHS command.<br>
 <li>Now you must register the new app to be seen by oxide launcer. In your reMarkable type <br><code>rot apps call registerApplication 'QVariantMap:{"name": "FreeDOS", "bin": "/home/root/dos.sh"}'</code><br>
 <li>Refresh oxide apps on your reMarkable: you now should see the FreeDOS icon, by tapping it yaft comes up, and the BOCHS emulator starts your FreeDOS machine on the reMarkable.<br>
-<li>Season it as you like, I made a simple 123.bat file to launch directly Lotus, or you can add a command in your AUTOEXEC.BAT to autostart it.
+<li>Season it as you like, I made a simple 123.bat file to launch directly Lotus, or you can add a command in your FDAUTO.BAT to autostart it.
 
   <h2>Think about it...</h2>
 Now that you got your reMarkable FreeDOS emulation set up, you can explore further possibilities. FreeDOS website gives you the opportunity to download extra free software images to use on your emulator. You may have old pieces of software around, that now you can use on your tablet! Do not expect every software to work in this enviroment, anyway...
@@ -75,7 +75,7 @@ Now that you got your reMarkable FreeDOS emulation set up, you can explore furth
 <li>FreeDOS in BOCHS doesn't eat disk images always the right way, it has to do with disk geometry, don't try to mount big images, it's DOS..<br>
 <li>Once you run a full copy of FreeDOS on BOCHS you will be able to mount almost everything, cd images included... since then, you will have to struggle to make BOCHS eat your images :(<br>
 <li>Lotus startup will be a little bit slow, depending on some BOCHS settins i found (see down). Tap two or three times -enter- and -space- and don't panic, just wait. Once run, I usually leave this in background, so tapping again the FreeDOS icon will bring it back immediatly when needed.
-<li>If you arrange your startup files in dos (exclude cdrom drive, optimize the boot process in general) BOCHS will boot -obviously- faster. 
+<li>If you arrange your startup files in dos (exclude cdrom drive -comment the "call CDROM.BAT" line-, optimize the boot process in general) BOCHS will boot -obviously- faster. 
 <li>Be careful: if you install the WYSIWYG addon during the installation process (like I did) your Lotus won't start on reMarkable. If you did this mistake, delete all the WYSIWYG files in the Lotus folder (i didn't delete the WYSIWYG folder indeed, just the files). This way you will get an error (See files or attached video), just press ESC and work. If you want to bypass the error, delete also the 123.cnf file, and Lotus will start without errors, just a little bit slower.
 <li>Graphic issues: try to f-ck around with INSTALL.EXE, try different graphic settings and you will be fine!
 <li>I managed to attach a virtual ethernet in BOCHS, then I tried to configure BOCHS to use reMarkable dhcp server running for usb interfaces, with still no results. It is not so necessary, but it would be fine to dowload dos software directly from your reMarkaDOS with the LINKS browser  ;) let me know if you can.

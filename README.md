@@ -4,8 +4,6 @@ See it in action on reMarkable 1: <br>https://www.dropbox.com/s/nvuqo4zncsqhizt/
 <br>See it in action on reMarkable 2:<br>
 https://www.dropbox.com/s/ywzghewt1q2dfax/YouCut_20221109_005323969.mp4?dl=0
 
-<h2>Proof of concept, or a real solution?</h2>
-For some users, it's just a proof of concept. Some will not find useful to have a spreadsheet running this way. For me it has been life changing... A simple scenario: student breaks into my coffee break, test in hand. He complains about his results, and ask me to check points if it's alright. I open my reMarkable, insert test points into my pre-made spreadsheet, show him the right result in real time. No pc, no laptop, just my tablet I use everytime. Coffee is life :)
 
 <h2>Disclaimer</h2>
 This guide is still a work in progress!<br><br>
@@ -16,6 +14,8 @@ As a <a href="https://www.remarkable.com">reMarkable</a> user, I always wanted t
 BOCHS is available on reMarkable thanks to Toltec repositories, Lotus 123 was a powerful piece of software I used back in school, and I still got a license, so why not? :D<br><br>
 Lotus 123 has everything you can expect from a spreadsheet, like formulas and charts, it is useful both for basic and advanced use and it can compete with modern spreadsheet software easily!
 
+<h2>Proof of concept, or a real solution?</h2>
+For some users, it's just a proof of concept. Some will not find useful to have a spreadsheet running this way. For me it has been life changing... A simple scenario: student breaks into my coffee break, test in hand. He complains about his results, and ask me to check points if it's alright. I open my reMarkable, insert test points into my pre-made spreadsheet, show him the right result in real time. No pc, no laptop, just my tablet I use everytime. Coffee is life :)
 <h2>Requirements</h2>
   <li>The reMarkable Tablet (1 or 2) and a motivated person, nerd-like guy/girl/* should be fine<br>
   <li>Basic reMarkable hacking: <a href="https://toltec-dev.org">Toltec</a> repository, oxide laucher, yaft, simple, ssh access to the thing<br>

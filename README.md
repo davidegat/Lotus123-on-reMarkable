@@ -15,7 +15,9 @@ BOCHS is available on reMarkable thanks to Toltec repositories, Lotus 123 was a 
 Lotus 123 has everything you can expect from a spreadsheet, like formulas and charts, it is useful both for basic and advanced use and it can compete with modern spreadsheet software easily!
 
 <h2>Proof of concept, or a real solution?</h2>
-For some users, it's just a proof of concept. Some will not find useful to have a spreadsheet running this way. For me it has been life changing... A simple scenario: student breaks into my coffee break, test in hand. He complains about his results, and ask me to check points if it's alright. I open my reMarkable, insert test points into my pre-made spreadsheet, show him the right result in real time. No pc, no laptop, just my tablet I use everytime. Coffee is life :)
+I understand that for some users it's a proof of concept, or just not appealing. Some will not find useful to have a spreadsheet running this way. For me it has been life changing... A simple scenario: student breaks into my coffee time, test in hand. He complains about his results, and ask me to check points if it's alright. I open my reMarkable, insert test points into my pre-made spreadsheet, show him the right result in real time. No pc, no laptop, just my tablet I use everytime. Coffee is life :)<br><br>
+"Ok, but how about managing your spreadsheet via a tiny keyboard on reMarkable?"<br>
+A regular calculator has smaller buttons, but no one complains :) plus, I usually connect via SSH, run Lotus, and set up some pre-made spreadsheet in a more comfortable enviroment. Data input on reMarkable, once my spreadsheet is made, is not hard to manage. reMarkable native UI for regular use can be as tricky as input numbers on the yaft (Yet Another Finger Terminal) keyboard.
 <h2>Requirements</h2>
   <li>The reMarkable Tablet (1 or 2) and a motivated person, nerd-like guy/girl/* should be fine<br>
   <li>Basic reMarkable hacking: <a href="https://toltec-dev.org">Toltec</a> repository, oxide laucher, yaft, simple, ssh access to the thing<br>

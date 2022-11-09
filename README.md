@@ -5,6 +5,10 @@ See it in action on reMarkable 1: <br>https://www.dropbox.com/s/nvuqo4zncsqhizt/
 https://www.dropbox.com/s/ywzghewt1q2dfax/YouCut_20221109_005323969.mp4?dl=0
 
 <br><br>
+<h2>Proof of concept, or a real solution?</h2>
+For some users, it's just a proof of concept. Some will not find useful to have a spreadsheet running this way. For me it has been life changing...<br>
+A simple scenario: student breaks into my coffee break, test in hand. He complains about his results, and ask me to check points if it's alright. I open my reMarkable, insert test points into spreadsheet, show him the right result in real time. No pc, no laptop, just my tablet I use everytime.<br>
+
 <h2>Disclaimer</h2>
 This guide is still a work in progress!<br><br>
 Everything is published 'as-is', no responsability taken. Some steps may be different depending on your setup, please consider this as a general, inspiring, not detailed guide. I am not a coder, just an enthusiast linux user with some (few) skills, please understand. 

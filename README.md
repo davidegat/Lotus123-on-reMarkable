@@ -1,4 +1,4 @@
-<H2>Running LOTUS 123 v4.2 spreadsheet software on the reMarkable tablet</h2>I am planning to document the process of running an old (licensed) version of LOTUS 123 v4.2 on the reMarkable tablet, via BOCHS emulation. <br>
+<H2>Running LOTUS 123 v4.2 spreadsheet software on the reMarkable tablet</h2>
 See it in action on reMarkable 1: <br>https://www.dropbox.com/s/nvuqo4zncsqhizt/YouCut_20221107_222834913.mp4?dl=0
 <br>https://www.dropbox.com/s/dwr0lfvecjm23te/YouCut_20221109_002503546.mp4?dl=0
 <br>See it in action on reMarkable 2:<br>

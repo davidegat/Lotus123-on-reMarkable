@@ -3,25 +3,7 @@ See it in action on reMarkable 1: <br>https://www.dropbox.com/s/nvuqo4zncsqhizt/
 <br>https://www.dropbox.com/s/dwr0lfvecjm23te/YouCut_20221109_002503546.mp4?dl=0
 <br>See it in action on reMarkable 2:<br>
 https://www.dropbox.com/s/ywzghewt1q2dfax/YouCut_20221109_005323969.mp4?dl=0
-<br><br>Other DOS software I managed to run on reMarkable:<br>
-<li>Wordstar Professional 4:
-<br>https://www.dropbox.com/s/6evvrcgn3e6s5kw/ws1.jpg?dl=0
-<br>https://www.dropbox.com/s/i16kbc7x19qr9gw/ws2.jpg?dl=0
-<li>DOS Edit and Ospedit (open source version of Edit):
-<br>https://www.dropbox.com/s/0cnm2bjipzaq961/ospedit.jpg?dl=0
-<li>MS Word 5.0:
-<br>https://www.dropbox.com/s/77ww4c0ndrh4by7/word5.jpg?dl=0
-<li>CAL2 - Yearly calendar
-<br>https://www.dropbox.com/s/kzk4b04ag6pzkyu/cal2.jpg?dl=0
-<li>QBASIC
-<br>https://www.dropbox.com/s/fiz52l6jcn7o15r/qbasic.jpg?dl=0
-<li>Borland 4 pro
-<br>https://www.dropbox.com/s/nntw4t5zyfz2f7r/4pro.jpg?dl=0
-<li>Wordperfect 5.0
-<br>https://www.dropbox.com/s/x6scn0bul4qtr6w/wp5.jpg?dl=0
-<li>Norton Classic Editor
-<br>https://www.dropbox.com/s/nlxt0xellsltc6h/nce.jpg?dl=0
-<br><br>More to come...
+
 
 
 <h2>Disclaimer</h2>
@@ -115,5 +97,24 @@ Due to the command line options, BOCHS will ignore .lock files remaining when BO
 Note: you can leave it running, it will not impact on your device performance, plus, once you tap again on the FreeDOS icon the same istance will come back, without running a new one. I usually leave it open once rM starts, and use it throughout the day.
   <h2>Just to be clear</h2>
 I could simply upload the BOCHS c: drive image of my full system, and let you run it without any fuss on your reMarkable, but... no? I just can't spread copyrighted software. Anyway, you can of course backup the c.img file to restore it in case of an update or else, or just to put it into another rM of your own. To backup your setup, just use scp: <code>scp "root@your-remarkable-ip:/home/root/freedos-img/*" .</code> (don't forget the last dot).<br><br>
-Enjoy.<br>
+<br><br>Other DOS software I managed to run on reMarkable:<br>
+<li>Wordstar Professional 4:
+<br>https://www.dropbox.com/s/6evvrcgn3e6s5kw/ws1.jpg?dl=0
+<br>https://www.dropbox.com/s/i16kbc7x19qr9gw/ws2.jpg?dl=0
+<li>DOS Edit and Ospedit (open source version of Edit):
+<br>https://www.dropbox.com/s/0cnm2bjipzaq961/ospedit.jpg?dl=0
+<li>MS Word 5.0:
+<br>https://www.dropbox.com/s/77ww4c0ndrh4by7/word5.jpg?dl=0
+<li>CAL2 - Yearly calendar
+<br>https://www.dropbox.com/s/kzk4b04ag6pzkyu/cal2.jpg?dl=0
+<li>QBASIC
+<br>https://www.dropbox.com/s/fiz52l6jcn7o15r/qbasic.jpg?dl=0
+<li>Borland 4 pro
+<br>https://www.dropbox.com/s/nntw4t5zyfz2f7r/4pro.jpg?dl=0
+<li>Wordperfect 5.0
+<br>https://www.dropbox.com/s/x6scn0bul4qtr6w/wp5.jpg?dl=0
+<li>Norton Classic Editor
+<br>https://www.dropbox.com/s/nlxt0xellsltc6h/nce.jpg?dl=0
+<br><br>More to come...<br><br>
+  Enjoy.<br>
 Gat.

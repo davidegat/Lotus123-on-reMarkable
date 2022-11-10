@@ -17,7 +17,6 @@ https://www.dropbox.com/s/ywzghewt1q2dfax/YouCut_20221109_005323969.mp4?dl=0
 
 
 <h2>Disclaimer</h2>
-This guide is still a work in progress!<br><br>
 Everything is published 'as-is', no responsability taken. Some steps may be different depending on your setup, please consider this as a general, inspiring, not detailed guide. I am not a coder, just an enthusiast linux user with some (few) skills, please understand. 
 
 <h2>Background</h2>

@@ -13,6 +13,14 @@ https://www.dropbox.com/s/ywzghewt1q2dfax/YouCut_20221109_005323969.mp4?dl=0
 <br>https://www.dropbox.com/s/77ww4c0ndrh4by7/word5.jpg?dl=0
 <li>CAL2 - Yearly calendar
 <br>https://www.dropbox.com/s/kzk4b04ag6pzkyu/cal2.jpg?dl=0
+<li>QBASIC
+<br>https://www.dropbox.com/s/fiz52l6jcn7o15r/qbasic.jpg?dl=0
+<li>Borland 4 pro
+<br>https://www.dropbox.com/s/nntw4t5zyfz2f7r/4pro.jpg?dl=0
+<li>WordStar 4
+<br>https://www.dropbox.com/s/732l6coajtyayiw/wordstar4.jpg?dl=0
+<li>Norton Classic Editor
+<br>https://www.dropbox.com/s/nlxt0xellsltc6h/nce.jpg?dl=0
 <br><br>More to come...
 
 

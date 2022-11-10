@@ -7,7 +7,7 @@ https://www.dropbox.com/s/ywzghewt1q2dfax/YouCut_20221109_005323969.mp4?dl=0
 <li>Wordstar Professional 4:
 <br>https://www.dropbox.com/s/6evvrcgn3e6s5kw/ws1.jpg?dl=0
 <br>https://www.dropbox.com/s/i16kbc7x19qr9gw/ws2.jpg?dl=0
-<li>Ospedit:
+<li>DOS Edit and Ospedit (open source version of Edit):
 <br>https://www.dropbox.com/s/0cnm2bjipzaq961/ospedit.jpg?dl=0
 <li>MS Word 5.0:
 <br>https://www.dropbox.com/s/77ww4c0ndrh4by7/word5.jpg?dl=0

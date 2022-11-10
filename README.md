@@ -77,7 +77,9 @@ Ok, we have choosiness in the installation process by Lotus, but also I failed s
     
 <h2>What if BOCHS doesn't eat my image?</h2>
 Try another way, hack into BOCHS by mounting on drive a the FreeDOS 1.3 Floppy Edition, in <b>bochsrc</b> set the boot drive with <code>boot: a</code>, reboot from a:, copy the system from a: to c: overwriting the existing FreeDOS system, stop the machine. Get back to <b>bochsrc</b> to modify again the boot order, and boot from c: once done to test it out.
-You should have a better enviroment now with some drivers, and -fingers crossed- mount via bochsrc your own converted image, and even mount iso images as cdroms (see <a href="https://bochs.sourceforge.io/doc/docbook/user/bochsrc.html">BOCHS documentation</a>). 
+You should have a better enviroment now with some drivers, and -fingers crossed- mount via bochsrc your own converted image, and even mount iso images as cdroms (see <a href="https://bochs.sourceforge.io/doc/docbook/user/bochsrc.html">BOCHS documentation</a>). <br><br>
+    <b>Other method to exchange files</b><br>
+ Put your desired files into a folder, create an ISO image with <b>mkisofs</b> and mount it with BOCHS (it must be upgraded withc cdrom driver, or launched via floppy edition).
 <h2>On reMarkable</h2>
 <li>scp to reMarkable both <b>dos.sh</b> and <b>startdos.sh</b> on /home/root.<br>
 <li><b>dos.sh</b> a simple "app" for reMarkable, it uses the "simple" scripting language, if you didn't installed it in your previous geeky journeys, do it with: <br><code>opkg install simple</code>
@@ -87,7 +89,7 @@ You should have a better enviroment now with some drivers, and -fingers crossed-
 <li>Season it as you like, I made a simple 123.bat file to launch directly Lotus, or you can add a command in your FDAUTO.BAT to autostart it.
   
 <h2>Very, very basic troubleshooting and infos</h2>
-<li>BOCHS with FreeDOS is choosy, due to limitations both of BOCHS and FreeDOS (more on the last), it may be needed to use <b>fdisk</b> into your reMarkable DOS box, to create partitions, than load back the img to Virtualbox to exchange files betweeen you and your newborn reMarkaDOS<br>
+<li>BOCHS with FreeDOS is choosy, due to limitations both of BOCHS and FreeDOS (more on the last), it may be needed to use <b>fdisk</b> into your reMarkable DOS box, to create partitions, than load back the img to Virtualbox to exchange files betweeen you and your newborn reMarkaDOS. Mounting a regular ISO image should also work (See above).<br>
 <li>FreeDOS in BOCHS doesn't eat disk images always the right way, it has to do with disk geometry, don't try to mount big images, it's DOS..<br>
 <li>Once you run a full copy of FreeDOS on BOCHS you will be able to mount almost everything, cd images included... since then, you will have to struggle to make BOCHS eat your images :(<br>
 <li>Lotus startup will be a little bit slow, depending on some BOCHS settins i found (see down). Tap two or three times -enter- and -space- and don't panic, just wait. Once run, I usually leave this in background, so tapping again the FreeDOS icon will bring it back immediatly when needed.

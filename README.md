@@ -109,7 +109,7 @@ I could simply upload the BOCHS c: drive image of my full system, and let you ru
 <br>https://www.dropbox.com/s/kzk4b04ag6pzkyu/cal2.jpg?dl=0
 <li>QBASIC
 <br>https://www.dropbox.com/s/fiz52l6jcn7o15r/qbasic.jpg?dl=0
-<li>Borland 4 pro
+<li>Borland 4 pro 4
 <br>https://www.dropbox.com/s/nntw4t5zyfz2f7r/4pro.jpg?dl=0
 <li>Wordperfect 5.0
 <br>https://www.dropbox.com/s/x6scn0bul4qtr6w/wp5.jpg?dl=0

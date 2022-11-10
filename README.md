@@ -11,6 +11,8 @@ https://www.dropbox.com/s/ywzghewt1q2dfax/YouCut_20221109_005323969.mp4?dl=0
 <br>https://www.dropbox.com/s/0cnm2bjipzaq961/ospedit.jpg?dl=0
 <li>MS Word 5.0:
 <br>https://www.dropbox.com/s/77ww4c0ndrh4by7/word5.jpg?dl=0
+<li>CAL2 - Yearly calendar
+<br>https://www.dropbox.com/s/kzk4b04ag6pzkyu/cal2.jpg?dl=0
 <br><br>More to come...
 
 

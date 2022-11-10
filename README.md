@@ -3,6 +3,15 @@ See it in action on reMarkable 1: <br>https://www.dropbox.com/s/nvuqo4zncsqhizt/
 <br>https://www.dropbox.com/s/dwr0lfvecjm23te/YouCut_20221109_002503546.mp4?dl=0
 <br>See it in action on reMarkable 2:<br>
 https://www.dropbox.com/s/ywzghewt1q2dfax/YouCut_20221109_005323969.mp4?dl=0
+<br><br>Other DOS software I managed to run on reMarkable:<br>
+<li>Wordstar Professional 4:
+<br>https://www.dropbox.com/s/6evvrcgn3e6s5kw/ws1.jpg?dl=0
+<br>https://www.dropbox.com/s/i16kbc7x19qr9gw/ws2.jpg?dl=0
+<li>Ospedit:
+<br>https://www.dropbox.com/s/0cnm2bjipzaq961/ospedit.jpg?dl=0
+<li>MS Word 5.0:
+<br>https://www.dropbox.com/s/77ww4c0ndrh4by7/word5.jpg?dl=0
+<br><br>More to come...
 
 
 <h2>Disclaimer</h2>
@@ -74,9 +83,6 @@ You should have a better enviroment now with some drivers, and -fingers crossed-
 <li>Now you must register the new app to be seen by oxide launcer. In your reMarkable type <br><code>rot apps call registerApplication 'QVariantMap:{"name": "FreeDOS", "bin": "/home/root/dos.sh"}'</code><br>
 <li>Refresh oxide apps on your reMarkable: you now should see the FreeDOS icon, by tapping it yaft comes up, and the BOCHS emulator starts your FreeDOS machine on the reMarkable.<br>
 <li>Season it as you like, I made a simple 123.bat file to launch directly Lotus, or you can add a command in your FDAUTO.BAT to autostart it.
-
-  <h2>Think about it...</h2>
-Now that you got your reMarkable FreeDOS emulation set up, you can explore further possibilities. FreeDOS website gives you the opportunity to download extra free software images to use on your emulator. You may have old pieces of software around, that now you can use on your tablet! Do not expect every software to work in this enviroment, anyway...
   
 <h2>Very, very basic troubleshooting and infos</h2>
 <li>BOCHS with FreeDOS is choosy, due to limitations both of BOCHS and FreeDOS (more on the last), it may be needed to use <b>fdisk</b> into your reMarkable DOS box, to create partitions, than load back the img to Virtualbox to exchange files betweeen you and your newborn reMarkaDOS<br>

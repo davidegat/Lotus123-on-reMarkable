@@ -4,7 +4,7 @@ See it in action on reMarkable 1: <br>https://www.dropbox.com/s/nvuqo4zncsqhizt/
 <br>See it in action on reMarkable 2:<br>
 https://www.dropbox.com/s/ywzghewt1q2dfax/YouCut_20221109_005323969.mp4?dl=0
 <br><br>
-<b>Shortcut</b><br>
+<b>Shortcut for running FreeDOS on reMarkable, with CDROM support already enabled</b><br>
 You can download the <b>pre made zip file</b> of FreeDOS from this repository (It's free open source software). I made it so that it will run without problems on your reMarkable, but you still need an hacked reMarkable with <a href="https://toltec-dev.org">Toltec</a> repository, and install BOCHS via <code>opkg install bochs</code>, upload files with <b>scp</b> on your reMarkable, put them into a folder, and run from this folder <code>bochs -q  -unlock -f bochsrc</code>. It has CDROM support already configured, by modifiyng the <b>bochsrc</b> file, you will be able to mount a regular ISO file, and install whatever DOS program you want, skipping part of this guide (DOS skills still required). <b>bochsrc</b> included in zip file is commented to help you mount a cdrom image. If you want to create an app on the <b>oxide launcher</b>, to launch your FreeDOS from reMarkable, skip to the reMarkable section of this guide to understand how. <b>Please note</b>: zip file in this repository does not contain the Lotus software, just an optimized version of FreeDOS!
 
 <h2>Disclaimer</h2>

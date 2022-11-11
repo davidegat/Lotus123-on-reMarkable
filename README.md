@@ -23,7 +23,7 @@ Obviously, it can't be a replacement for Excel or modern spreadsheet solutions r
 <br><b>"reMarkable is made for paper people, why do you want to run a spreadsheet on it?"</b><br>
 reMarkable changed my life as a teacher. It hosts all my student's books, annotated pdfs of my slides, my mental maps to use in class, class register, my timetable, meeting notes, I write on it everytime and mostly use it as real paper. I just needed a little more spreadsheety tablet, to fill the gap in some situations. Why run a whole operating system on pc, or boot my laptop with its times, when I can automate simple calculations I need on my reMarkable, which is always in my hands?<br><br>
 <b>"How long did you take to get this? Is it worth it?"</b><br>
-Geek/Nerd people would answer: yes, is it worth it. It took one day to get this, but nevermind, nerd nature is stronger: we can work one day, to get a daily 5 minutes time save the rest of our lives. It's all about being nerd. Are you? :)
+Geek/Nerd people would answer yes.. It took one day to get things done, but nevermind, nerd nature is stronger: we can work one day, to get a daily 5 minutes time save the rest of our lives. It's all about being nerd. Are you? :)
 <h2>Requirements</h2>
   <li>The reMarkable Tablet (1 or 2) and a motivated person, nerd-like guy/girl/* should be fine<br>
   <li>Basic reMarkable hacking: <a href="https://toltec-dev.org">Toltec</a> repository, oxide laucher, yaft, simple, ssh access to the thing<br>

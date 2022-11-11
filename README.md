@@ -34,6 +34,7 @@ Geek/Nerd people would answer yes.. It took one day to get things done, but neve
   <li>A full FreeDOS running copy on Virtualbox<br>
   <li>I have no time to get technical enough, so you will also need: Basic linux, DOS, Virtualbox and BOCHS knowledge, or google skills.<br>
   <li>A decent amount of coffee and time to debug BOCHS laziness in seeing your imgs as drives :O
+<br><b>I might, in the future, provide a full BOCHS FreeDOS setup with drivers, software free, to be just copied and run on reMarkable out of the box, so that you can install your own sowftware from regular ISO images you can create on your Linux (or Windows) box.</b>
   
 <h2>Why Virtualbox</h2>
 Lotus 123 v.2.4 comes in 9 parts, 5.25-inch disk setup. I first tried to extract images to create a new one to run in bochs, but Lotus is a bit choosy, it will not install this way, and something like <a href="https://forum.winworldpc.com/uploads/editor/q4/vd8bs7xeckcd.png">a bad error</a> happens. Here's why Virtualbox, it lets you mount floppy images on the fly, BOCHS doesn't (or I don't know how to easily do it in a text enviroment, anyway..).

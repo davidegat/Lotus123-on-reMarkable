@@ -70,8 +70,8 @@ Ok, we have choosiness in the installation process by Lotus, but also I failed s
 Try another way, hack into BOCHS by mounting on drive a the FreeDOS 1.3 Floppy Edition, in <b>bochsrc</b> set the boot drive with <code>boot: a</code>, reboot from a:, copy the system from a: to c: overwriting the existing FreeDOS system, stop the machine. Get back to <b>bochsrc</b> to modify again the boot order, and boot from c: once done to test it out.
 You should have a better enviroment now with some drivers, and -fingers crossed- mount via bochsrc your own converted image, and even mount iso images as cdroms (see <a href="https://bochs.sourceforge.io/doc/docbook/user/bochsrc.html">BOCHS documentation</a>). <br><br>
     <b>Other method to exchange files</b><br>
- Put your desired files into a folder, create an ISO image with <b>mkisofs</b> and mount it with BOCHS (FreeDOS must be previously upgraded to get a cdrom driver, or booted via floppy edition).
- <b>Use the shortcut solution</b>
+ Put your desired files into a folder, create an ISO image with <b>mkisofs</b> and mount it with BOCHS (FreeDOS must be previously upgraded to get a cdrom driver, or booted via floppy edition).<BR><BR>
+ <b>Use the shortcut solution</b><BR>
 Download the premade zip file in this repository, it is configured with cdrom support. Please note that Lotus requires the Virtualbox procedure, won't be able to install Lotus this way, but most software will just work if copied to your c: drive from a mounted ISO image.
 <h2>On reMarkable</h2>
 <li>scp to reMarkable both <b>dos.sh</b> and <b>startdos.sh</b> on /home/root.<br>

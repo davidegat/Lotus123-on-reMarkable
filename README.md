@@ -7,7 +7,7 @@ https://www.dropbox.com/s/ywzghewt1q2dfax/YouCut_20221109_005323969.mp4?dl=0
 
 
 <h2>Disclaimer</h2>
-Everything is published 'as-is', no responsability taken. Some steps may be different depending on your setup, please consider this as a general, inspiring, not detailed guide. I am not a coder, just an enthusiast linux user with some (few) skills, please understand. 
+Everything is published 'as-is', no responsability taken. Some steps may be different depending on your setup, please consider this as a general, inspiring, not detailed guide. I am not a coder, just an enthusiast linux user with some (few) skills, please understand.<br>
 
 <h2>Background</h2>
 As a <a href="https://www.remarkable.com">reMarkable</a> user, I always wanted to get some useful apps to expand my possibilites, a spreadsheet is what I needed more as a teacher. Unfortunately, there's still no native spreadsheet app for reMarkable, except for some linux software like "SC", but didn't want to get crazy porting it on reMarkable. But, what about emulating DOS on reMarkable via BOCHS and getting back to the old good 90's? :)<br>
@@ -34,7 +34,8 @@ Geek/Nerd people would answer yes.. It took one day to get things done, but neve
   <li>A full FreeDOS running copy on Virtualbox<br>
   <li>I have no time to get technical enough, so you will also need: Basic linux, DOS, Virtualbox and BOCHS knowledge, or google skills.<br>
   <li>A decent amount of coffee and time to debug BOCHS laziness in seeing your imgs as drives :O
-<br><b>I might, in the future, provide a full BOCHS FreeDOS setup with drivers, software free, to be just copied and run on reMarkable out of the box, so that you can install your own sowftware from regular ISO images you can create on your Linux (or Windows) box.</b>
+<b>Shortcut</b><br>
+You can download the <b>pre made image</b> of FreeDOS from this repository (It's free open source software). It will run without problems on your reMarkable, but you still need an hacked reMarkable with <a href="https://toltec-dev.org">Toltec</a> repository, and install BOCHS via <code>opkg install bochs</code>, upload files with <b>scp</b> on your reMarkable, put them into a folder, and run from this folder <code>bochs -q  -unlock -f bochsrc</code>. If you modify the <b>bochsrc</b> file, you will be able to mount a regular ISO file, and install whatever DOS program you want, skipping the whole guide (DOS skills still required).
   
 <h2>Why Virtualbox</h2>
 Lotus 123 v.2.4 comes in 9 parts, 5.25-inch disk setup. I first tried to extract images to create a new one to run in bochs, but Lotus is a bit choosy, it will not install this way, and something like <a href="https://forum.winworldpc.com/uploads/editor/q4/vd8bs7xeckcd.png">a bad error</a> happens. Here's why Virtualbox, it lets you mount floppy images on the fly, BOCHS doesn't (or I don't know how to easily do it in a text enviroment, anyway..).
